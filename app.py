@@ -15,8 +15,8 @@ room_types= st.selectbox(
     "Room Type",options=['Private room', 'Entire home/apt', 'Shared room'],
     index=False
 )
-latitude = st.number_input("latitude", min_value=-100.0, max_value=200.0, value=5.0, format="%.2f")
-longitude = st.number_input("longitude", min_value=-100.0, max_value=100.0, value=80.0, format="%.2f")
+latitude = st.number_input("latitude", min_value=-100.0, max_value=200.0, value=5.0, format="%.5f")
+longitude = st.number_input("longitude", min_value=-100.0, max_value=100.0, value=80.0, format="%.5f")
 minimum_nights = st.number_input("minimum_nights", min_value=0, max_value=1000, value=10)
 number_of_reviews = st.number_input("number_of_reviews", min_value=0.0, max_value=100.0, value=80.0, format="%.2f")
 reviews_per_month= st.number_input("reviews_per_month", min_value=0.0, max_value=20.0, value=5.0, format="%.2f")
