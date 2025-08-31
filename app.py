@@ -37,4 +37,5 @@ features = np.array([[neighbourhood_group, latitude, longitude,
 # Prediction
 if st.button("Predict price of airbnb"):
     prediction = model.predict(features)
-    st.success(f"Predicted price of airbnb: {prediction[0]:.2f} years")
+    predictions=np.expm1(prediction)
+    st.success(f"Predicted price of airbnb: {predictions[0]:.2f}")
