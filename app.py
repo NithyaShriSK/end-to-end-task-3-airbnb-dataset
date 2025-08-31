@@ -31,7 +31,7 @@ neighbourhood_group=neigh_map[neighbourhood_groups]
 room_type=room_map[room_types]
 features = np.array([[neighbourhood_group, latitude, longitude,
                       room_type, minimum_nights, number_of_reviews, reviews_per_month,
-                      calculated_host_listings_count, availability_365, year, month, day]
+                      calculated_host_listings_count, availability_365, year, month]
     ])
 
 # Prediction
