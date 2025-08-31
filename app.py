@@ -24,14 +24,14 @@ calculated_host_listings_count = st.number_input("calculated_host_listings_count
 availability_365 = st.number_input("availability_365", min_value=0.0, max_value=100.0, value=0.5, format="%.2f")
 year = st.number_input("year", min_value=0.0, max_value=100000.0, value=5000.0, format="%.2f")
 month = st.number_input("month", min_value=0.0, max_value=1500000000.0, value=5000000.0, format="%.2f")
-
+day = st.number_input("day", min_value=0.0, max_value=50.0, value=10.0, format="%.2f")
 neigh_map={'Brooklyn':1, 'Manhattan':2, 'Queens':3, 'Staten Island':0, 'Bronx':4}
 room_map={'Private room':1, 'Entire home/apt':0, 'Shared room':2}
 neighbourhood_group=neigh_map[neighbourhood_groups]
 room_type=room_map[room_types]
 features = np.array([[neighbourhood_group, latitude, longitude,
                       room_type, minimum_nights, number_of_reviews, reviews_per_month,
-                      calculated_host_listings_count, availability_365, year, month]
+                      calculated_host_listings_count, availability_365, year, month, day]
     ])
 
 # Prediction
