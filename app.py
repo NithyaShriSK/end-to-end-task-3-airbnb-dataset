@@ -12,7 +12,7 @@ neighbourhood_groups  = st.selectbox(
     index=False
 )
 room_types= st.selectbox(
-    "Room Type",options=[['Private room', 'Entire home/apt', 'Shared room']],
+    "Room Type",options=['Private room', 'Entire home/apt', 'Shared room'],
     index=False
 )
 latitude = st.number_input("latitude", min_value=0.0, max_value=20.0, value=5.0, format="%.2f")
