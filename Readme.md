@@ -9,6 +9,7 @@ and deployed with **Streamlit** for an interactive user experience.
 
 Try the app here: [Streamlit
 App](https://end-to-end-task-3-airbnb-dataset-bempfse9zdgkyqsc26jm4t.streamlit.app/)
+![Airbnb Price Prediction](images/image.png)
 
 ## 📂 Repository
 
