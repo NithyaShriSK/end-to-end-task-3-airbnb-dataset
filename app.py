@@ -18,13 +18,13 @@ room_types= st.selectbox(
 latitude = st.number_input("latitude", min_value=-100.0, max_value=200.0, value=5.0, format="%.5f")
 longitude = st.number_input("longitude", min_value=-100.0, max_value=100.0, value=80.0, format="%.5f")
 minimum_nights = st.number_input("minimum_nights", min_value=0, max_value=1000, value=10)
-number_of_reviews = st.number_input("number_of_reviews", min_value=0.0, max_value=100.0, value=80.0)
+number_of_reviews = st.number_input("number_of_reviews", min_value=0, max_value=100, value=80)
 reviews_per_month= st.number_input("reviews_per_month", min_value=0.0, max_value=20.0, value=5.0, format="%.2f")
-calculated_host_listings_count = st.number_input("calculated_host_listings_count", min_value=0.0, max_value=100.0, value=80.0)
-availability_365 = st.number_input("availability_365", min_value=0.0, max_value=100.0, value=0.5)
-year = st.number_input("year", min_value=0.0, max_value=100000.0, value=5000.0)
-month = st.number_input("month", min_value=0.0, max_value=1500000000.0, value=5000000.0)
-day = st.number_input("day", min_value=0.0, max_value=50.0, value=10.0)
+calculated_host_listings_count = st.number_input("calculated_host_listings_count", min_value=0, max_value=100, value=80)
+availability_365 = st.number_input("availability_365", min_value=0, max_value=100, value=2)
+year = st.number_input("year", min_value=0, max_value=100000, value=5000)
+month = st.number_input("month", min_value=0, max_value=1500000000, value=5000000)
+day = st.number_input("day", min_value=0, max_value=50, value=10)
 neigh_map={'Brooklyn':1, 'Manhattan':2, 'Queens':3, 'Staten Island':0, 'Bronx':4}
 room_map={'Private room':1, 'Entire home/apt':0, 'Shared room':2}
 neighbourhood_group=neigh_map[neighbourhood_groups]
